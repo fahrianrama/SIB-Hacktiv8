@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Materialize - Fahrian</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Import FontAwesome -->
+  <script src="https://kit.fontawesome.com/9769c63bf6.js" crossorigin="anonymous"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    header{
+      background: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+
+    @media screen and (max-widht: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+      background-color: #01579b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Jooojon</a>
+
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="" data-tooltip="This is Instagram" class="tooltipped btn-floating btn-small grey darken-4">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="" data-tooltip="This is Facebook" class="tooltipped btn-floating btn-small grey darken-4">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="" data-tooltip="This is Twitter" class="tooltipped btn-floating btn-small grey darken-4">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Photos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Photo/Grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg/1200px-Poster-sized_portrait_of_Barack_Obama.jpg" alt="image" class="resposive-img materialboxed" style="width: 300px;">
+      </div> 
+      <div class="col s12 l6 offset-l1">
+        <h2 class="light-blue-text text-darken-4">Barrack Obama</h2>
+        <p>Barack Hussein Obama II (born August 4, 1961) is an American politician who served as the 44th president of 
+          the United States from 2009 to 2017. A member of the Democratic Party, Obama was the first African-American 
+          president of the United States.[3] He previously served as a U.S. senator from Illinois from 2005 to 2008 and 
+          as an Illinois state senator from 1997 to 2004. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/220px-Donald_Trump_official_portrait.jpg" alt="image" class="resposive-img materialboxed" style="width: 300px;">
+      </div> 
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="light-blue-text text-darken-4">Donald Trump</h2>
+        <p>Donald John Trump (lahir 14 Juni 1946) adalah pebisnis, presenter acara realitas, politikus, dan Presiden 
+          Amerika Serikat ke-45. Lahir dan besar di Queens, New York City, Trump meraih gelar sarjana dari jurusan 
+          ekonomi Wharton School of the University of Pennsylvania pada tahun 1968. Ia mengambil alih kendali 
+          perusahaan properti dan konstruksi milik ayahnya, Fred Trump pada tahun 1971 dan menamainya The Trump 
+          Organization. 
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/800px-Joe_Biden_presidential_portrait.jpg" alt="image" class="resposive-img materialboxed" style="width: 300px;">
+      </div> 
+      <div class="col s12 l6 offset-l1">
+        <h2 class="light-blue-text text-darken-4">Joe Biden</h2>
+        <p>Joseph Robinette Biden Jr. (lahir 20 November 1942) adalah seorang politikus Amerika yang menjabat sebagai 
+          Presiden Amerika Serikat ke-46. Setelah mengalahkan Donald Trump yang merupakan petahana saat pemilihan umum 
+          Presiden Amerika Serikat 2020, dia dilantik sebagai Presiden AS ke-46 pada 20 Januari 2021. Ia adalah anggota 
+          Partai Demokrat dan pernah menjabat sebagai Wakil Presiden Amerika Serikat ke-47 dari 2009 hingga 2017 serta 
+          Senator senior dari Delaware dari 1973 hingga 2009. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://static.bangkokpost.com/media/content/20210805/c1_2160587_210805174803.jpg" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- Services/Tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="light-blue-text text-darken-4">
+          Technology
+        </h2>
+        <p>
+          Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan 
+          kenyamanan hidup manusia.
+          Penggunaan teknologi oleh manusia dimulai dengan pengubahan sumber daya alam menjadi alat-alat sederhana. 
+          Penemuan prasejarah tentang kemampuan mengendalikan api telah menaikkan ketersediaan sumber-sumber pangan, 
+          sedangkan penciptaan roda telah membantu manusia dalam bepergian dan mengendalikan lingkungan mereka. 
+        </p> 
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active light-blue-text text-darken-4">
+              Photography
+            </a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="light-blue-text text-darken-4">
+              Editing
+            </a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+          <p class="flow-text light-blue-text text-darken-4">Photography</p>
+          <p>
+            Fotografi (dari bahasa Inggris: photography, yang berasal dari kata Yunani yaitu "phos": cahaya dan 
+            "graphien": melukis/menulis) adalah proses melukis/menulis dengan menggunakan media cahaya.
+            Sebagai istilah umum, fotografi berarti proses atau metode untuk menghasilkan gambar atau foto dari 
+            suatu objek dengan merekam pantulan cahaya yang mengenai objek tersebut pada media yang peka cahaya. 
+            Alat paling populer untuk menangkap cahaya ini adalah kamera. Tanpa cahaya, tidak ada foto yang bisa dibuat. 
+          </p>
+        </div>
+        <div id="editing" class="col s12">
+          <p class="flow-text light-blue-text text-darken-4">Editing</p>
+          <p>
+            Kamu pasti sering banget mendengar atau melihat kata edit, baik itu di dunia nyata maupun dunia maya 
+            seperti di sosial media facebook, twitter, instagram atau aplikasi berbasis chat lainnya seperti Whatsapp, 
+            BBM, Line dan lain sebagainya.
+            Namun apakah kamu mengetahui definisi sebenarnya tentang kata edit yang sebenarnya supaya kamu paham dalam 
+            membaca kalimat yang mengandung kata tersebut. Berikut ini adalah penjelasan dan arti kata edit berdasarkan 
+            Kamus Komputer Online adalah:
+            Arti kata edit dalam Kamus Komputer Online adalah Kegiatan memodifikasi format suatu keluaran atau masukan 
+            dengan jalan menyisipkan atau menghapus karakter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://blog.ipleaders.in/wp-content/uploads/2021/09/shutterstock_349400798-scaled-e1579805983479.jpg" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="light-blue-text text-darken-4">Get in Touch</h2>
+        <p>
+          Hubungi kami melalui form disamping ini
+        </p>
+
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="#">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea name="message" id="message" cols="20" rows="20" class="materialize-textarea"></textarea>
+            <label for="message">Masukkan pesan</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Tanggal pelayanan</label>
+          </div>
+          <div class="input-field">
+            <p>Service Required</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <hr>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Jooojon</h5>
+          <p class="grey-text text-lighten-4">Jooojon adalah sebuah aplikasi yang dibuat untuk memudahkan para pengguna 
+            dalam mencari informasi mengenai sebuah tempat wisata yang ada di Indonesia. </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <!-- Social Media -->
+          <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">
+        &copy; 2022 Copyright Jooojon
+      </div>
+    </div>
+  </footer>
+  
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Jquery -->
+  <script>
+    $(document).ready(function(){
+      $(".sidenav").sidenav();
+      $(".materialboxed").materialbox();
+      $(".parallax").parallax();
+      $(".tabs").tabs();
+      $(".scrollspy").scrollSpy();
+      $(".datepicker").datepicker({
+        disableWeekends: true,
+      });
+      $(".tooltipped").tooltip();
+    });
+  </script>
+
+</body>
+
+</html>

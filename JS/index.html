@@ -1,0 +1,39 @@
+<script>
+    function direct(){
+        window.location.replace("http://www.google.com");
+    }
+    function insert_grade(grade){
+        if (grade>80 && grade<=100){
+            alert("Your grade is A");
+        }
+        else if(grade>60 && grade<=80){
+            alert("Your grade is B");
+        }
+        else if(grade>=40 && grade<=60){
+            alert("Your grade is C");
+        }
+        else if(grade<40){
+            alert("Your grade is D");
+        }
+    }
+    const username = "user";
+    const password = 123;
+    let userinput = prompt("Masukkan Username");
+    let pwinput = prompt("Masukkan Password");
+    if (userinput != username && pwinput != password){
+        alert("Username dan Password anda salah");
+        direct();
+    }
+    else if(userinput == username && pwinput!=password){
+        alert("Password anda salah");
+        direct();
+    }
+    else if(pwinput == password && userinput!= username){
+        alert("Username anda salah");
+        direct();
+    }
+    else{
+        alert("Selamat Datang");
+        insert_grade(prompt("Masukkan nilai (1-100)"));
+    }
+</script>

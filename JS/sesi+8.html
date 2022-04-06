@@ -1,0 +1,36 @@
+<script>
+  const students = [
+      { name: "Remy", lastname: "testing", cohort: "Jan", nilai: 80 },
+      { name: "Genevieve", cohort: "March", nilai: 75 },
+      { name: "Chuck", cohort: "Jan", nilai: 70 },
+      { name: "Osmund", cohort: "June", nilai: 85 },
+      { name: "Nikki", cohort: "June", nilai: 95 },
+      { name: "Boris", cohort: "June", nilai: 100 },
+    ];
+  let menu = 0;
+  while (menu!=5){
+    menu = prompt("Pilih Menu\n1. Tambahkan Data\n2. Hapus Data Terakhir\n3. Hapus Nama\n4. Tampilkan Data\n5. Exit");
+    if (menu == 1){
+      let nama = prompt("Masukkan nama");
+      let cohort = prompt("Masukkan cohort");
+      let nilai = prompt("Masukkan nilai");
+      students.push({
+        name: nama,
+        cohort: cohort,
+        nilai: nilai
+      });
+    }
+    else if (menu == 2){
+      students.pop();
+    }
+    else if(menu == 3){
+      let nama = prompt("Masukkan nama");
+      let indexofName = students.findIndex()
+
+    }
+    else if(menu == 4){
+      
+    }
+    alert(`Data terbaru : ` + JSON.stringify(students));
+  }
+</script>
